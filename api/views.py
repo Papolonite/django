@@ -12,7 +12,7 @@ class PostView(APIView):
     
     def get(self, request):
         params = request.query_params
-        name = params.get("name")
+        name = params.get("username")
 
         post = Post.objects.all()
         if name:
